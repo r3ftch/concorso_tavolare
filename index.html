@@ -7,8 +7,16 @@
     <title>Concorso assistente tavolare</title>
 </head>
 <style>
+
+    *{
+        font-family: Georgia,Times,Times New Roman,serif; 
+    }
 li {
   margin-bottom: 40px;
+}
+
+h1, h2, h3{
+    text-align: center;
 }
 
 li:last-child {
@@ -27,10 +35,38 @@ footer {
   width: 100%;
   text-align: center;
 }
+
+.link{
+    border: 2px solid black;
+}
+
+.contenitore_scritto{
+    border: 2px solid darkslateblue;
+}
+
+.contenitore_orale{
+    border: 2px solid darkgoldenrod;
+}
+
+.container_flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.imgbox{
+text-align: center;
+}
 </style>
 <body>
+    <div class="container_flex"></div>
+    <h1>Argomenti da sapere per parte scritta</h1> 
+        <div class="imgbox">
+        <img src="https://cdn130.picsart.com/286161570065211.png?to=crop&type=webp&r=1456x1494&q=85" width="100" alt="">
+    </div>
 
-    <h1>Argomenti da sapere per parte scritta</h1>
+
+    <div class="contenitore_scritto">
     <ul>
         <li><a href="https://drive.google.com/file/d/1fE_7knphsE-S19F1KBd3r40WLtXWmcyV/view?usp=sharing">Legge tavolare (R.D. 28 marzo 1929 n.499),</a><br><a href="https://drive.google.com/file/d/1T9vPZp9aCrUCPW_1o03GvLiw1VYtk_lf/view?usp=sharing"> Legge di informatizzazione (L.R. 14 agosto
             1999, n.4) e relativi regolamenti (Regolamento di esecuzione del 14 agosto 1999, n.4,
@@ -48,10 +84,27 @@ footer {
         <li><a href="https://drive.google.com/file/d/1GMcVbBKd9Vv31bnnG9OZm4llVrV3itkf/view?usp=sharing">normativa del Catasto fondiario e disciplina del tipo di frazionamento (L.R. 13 novembre
             1985, n.6).</a></li>
     </ul>
+</div>
+
+    <h3>Link utili</h3>
+
+    <div class="link">
+        <ul>
+            <li><a href="https://www.youtube.com/playlist?list=PLSPVfsnUajt7D45ZxttIODOBXN6X3ujJS">YOUTUBE Diritto Civile 2022 (Istituzioni di Diritto Privato)</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLae5BVBN6xGamFClla2JuRtHuHpkeDQjK">YOUTUBE LEZIONI DI IST. DIRITTO PRIVATO/DIRITTO CIVILE (RIASSUNTI AGGIORNATI AL 2022)</a></li>
+            <li><a href="https://www.riassunti.eu/riassunti-diritto-civile/">riassunti-diritto-civile 4.99euro</a></li>
+            <li><a href="https://www.youtube.com/watch?v=yPTJLp8p5_Y">YOUTUBE Cos'è il catasto e come funziona | planimetria, visura e dati catastali</a></li>
+            <li><a href="https://drive.google.com/file/d/1EElil9pgIDfw98gHW-__CZxrTD0nxctv/view?usp=sharing">Il sistema catastale 2019_Il Sistema Catastale 2019 (dati 2018)</a></li>
+        </ul>
+    </div>
+
+
+
 
 <br>
 <br>
     <h2>Argomenti da sapere per parte orale</h2>
+    <div class="contenitore_orale">
     <ul>
         <li>elementi sull’ordinamento statutario della Provincia autonoma di Trento;</li>
         <li>doveri e codice di comportamento dei pubblici dipendenti (delibera n. 1217 di data 18 luglio
@@ -63,6 +116,8 @@ footer {
         <li>elementi sul vigente piano per la prevenzione della corruzione e per la trasparenza della
             Provincia autonoma di Trento.</li>
     </ul>
+</div>
+</div>
 </body>
 
 
