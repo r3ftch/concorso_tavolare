@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="countdown.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
     <title>Concorso assistente tavolare</title>
 </head>
 <style>
@@ -50,16 +53,25 @@ footer {
 
 .container_flex{
     display: flex;
-    flex-direction: column;
+    flex-direction: rows;
     flex-wrap: wrap;
 }
 
 .imgbox{
 text-align: center;
 }
+
+.countdown{font-family: arial; text-transform: uppercase;}
+.countdown > div{display: inline-block;}
+.countdown > div > span{display: block; text-align: center;}
+.countdown-container{margin:0 3px;}
+.countdown-container .countdown-heading{font-size: 11px; margin: 3px; color: pink}
+.countdown-container .countdown-value{font-size: 50px; background: darkslateblue; padding:10px; color:pink; text-shadow: 2px 2px 2px rgba(0,0,0,0.4)}
+
 </style>
 <body>
-    <div class="container_flex"></div>
+
+    <div class="container_flex"><div class='countdown' data-date="2022-12-20" data-time="09:00" style="margin: 0 auto;"></div></div>
     <h1>Argomenti da sapere per parte scritta</h1> 
         <div class="imgbox">
         <img src="https://cdn130.picsart.com/286161570065211.png?to=crop&type=webp&r=1456x1494&q=85" width="100" alt="">
